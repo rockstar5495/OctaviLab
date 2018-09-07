@@ -14,14 +14,20 @@
      limitations under the License.
 -->
 <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/misc_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="toast_icon"
-            android:title="@string/toast_icon_title"
-            android:summary="@string/toast_icon_summary"
-            android:defaultValue="false" />
+     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+          android:key="toast_icon"
+          android:title="@string/toast_icon_title"
+          android:summary="@string/toast_icon_summary"
+          android:defaultValue="false" />
+     <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="sensor_block"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:defaultValue="false" />
+     
 
 </PreferenceScreen>
