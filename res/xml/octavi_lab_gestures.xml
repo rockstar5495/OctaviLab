@@ -18,4 +18,18 @@
     android:title="@string/gesture_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="double_tap_gestures_category"
+        android:title="@string/double_tap_gestures_category_title">
+
+	<com.octavi.lab.preferences.SystemSettingSwitchPreference
+	    android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_sleep_gesture_title"
+            android:defaultValue="false" />
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_sleep_lockscreen_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
