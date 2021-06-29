@@ -97,4 +97,12 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />
 
+    <!-- Alert Slider -->
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="alert_slider_notifications"
+        android:icon="@drawable/ic_light_switch"
+        android:title="@string/alert_slider_notifications_title"
+        android:summary="@string/alert_slider_notifications_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
