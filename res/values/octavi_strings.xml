@@ -53,4 +53,7 @@
     <string name="gaming_title">Gaming Mode</string>
     <string name="misc_title">Miscellaneous</string>
 
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
 </resources>
