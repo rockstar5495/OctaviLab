@@ -119,4 +119,10 @@
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
     <string name="volume_rocker_music_controls_title">Music control</string>
     <string name="volume_rocker_music_controls_summary">Long press volume buttons to switch tracks while screen off</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Traffic Indicators</string>
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_summary">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 </resources>
