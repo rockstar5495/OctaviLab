@@ -30,6 +30,13 @@
           android:summary="@string/ignore_window_secure_summary"
           android:defaultValue="false"/>
 
+     <Preference
+        android:key="app_lock"
+        android:title="@string/app_lock_title"
+        android:summary="@string/app_lock_summary"
+        android:fragment="com.octavi.lab.security.applock.AppLockSettingsFragment"
+        settings:controller="com.octavi.lab.security.applock.AppLockSettingsPreferenceController" />
+
     <PreferenceCategory
         android:title="@string/notifications_category" >
 
