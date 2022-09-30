@@ -62,5 +62,4 @@
         android:scaleType="fitCenter"
         android:tint="?android:attr/textColorPrimary"
         android:src="@drawable/ic_cancel" />
-
 </LinearLayout>

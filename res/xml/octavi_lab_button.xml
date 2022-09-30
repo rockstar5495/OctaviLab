@@ -15,10 +15,10 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/button_title"
+        android:title="@string/button_category"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <ListPreference
+        <com.octavi.lab.preferences.SystemSettingListPreference
         android:key="torch_power_button_gesture"
         android:title="@string/torch_power_button_gesture_title"
         android:entries="@array/torch_power_button_gesture_entries"
@@ -38,7 +38,7 @@
         android:title="@string/volume_category">
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
-	android:key="volume_button_music_control"
+	   android:key="volume_button_music_control"
         android:summary="@string/volume_rocker_music_controls_summary"
         android:title="@string/volume_rocker_music_controls_title"
         android:defaultValue="false"

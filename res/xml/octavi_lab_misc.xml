@@ -29,5 +29,4 @@
           android:title="@string/sensor_block_title"
           android:summary="@string/sensor_block_summary"
           android:fragment="com.octavi.lab.settings.fragments.SensorBlockSettings"/>
-
 </PreferenceScreen>
