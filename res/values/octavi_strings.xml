@@ -158,4 +158,8 @@
     <string name="ignore_window_secure_title">Ignore secure window flag</string>
     <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
 
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
 </resources>
