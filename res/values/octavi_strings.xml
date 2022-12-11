@@ -153,4 +153,9 @@
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
     <string name="fprint_error_vib_title">Fingerprint error vibration</string>
     <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore secure window flag</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+
 </resources>
