@@ -30,6 +30,16 @@
           android:summary="@string/ignore_window_secure_summary"
           android:defaultValue="false"/>
 
+    <PreferenceCategory
+        android:title="@string/notifications_category" >
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="notification_guts_kill_app_button"
+            android:title="@string/notification_guts_kill_app_button_title"
+            android:summary="@string/notification_guts_kill_app_button_summary" />
+
+    </PreferenceCategory>
+
      <Preference
           android:key="sensor_block_settings"
           android:title="@string/sensor_block_title"
