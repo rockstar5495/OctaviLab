@@ -166,4 +166,8 @@
     <string name="disable_fingerprint_ripple_effect_title">Disable Ripple effect</string>
     <string name="disable_fingerprint_ripple_effect_summary">Disable ripple effect on unlock</string>
 
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
 </resources>
