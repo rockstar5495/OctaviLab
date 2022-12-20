@@ -283,4 +283,8 @@
     <string name="status_bar_icons_title">Status bar icons</string>
     <string name="status_bar_icons_summary">Choose which status bar icons can be shown</string>
 
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">No power menu when locked</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lockscreen</string>
+
 </resources>
