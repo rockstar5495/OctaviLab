@@ -268,4 +268,8 @@
     <string name="global_actions_emergency">Emergency</string>
     <string name="global_actions_device_controls">Device controls</string>
 
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Clear all notification button</string>
+    <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
+
 </resources>

@@ -30,6 +30,12 @@
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="quick_settings_animations"
         android:title="@string/qs_tile_animation_title"/>
