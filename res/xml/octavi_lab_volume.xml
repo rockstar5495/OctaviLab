@@ -19,6 +19,17 @@
     android:title="@string/volume_title">
 
     <PreferenceCategory
+        android:title="@string/volume_dialog_category">
+
+        <!-- Volume panel to left -->
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+        android:key="volume_panel_on_left"
+        android:title="@string/volume_panel_on_left_title"
+        android:summary="@string/volume_panel_on_left_summary"
+        android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/volume_customizations_title">
 
     <com.octavi.lab.preferences.SystemSettingListPreference
