@@ -107,6 +107,12 @@
     <string name="volume_key_cursor_control_on">Volume Up/Down - Cursor Left/Right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume Up/Down - Cursor Right/Left</string>
 
+    <!-- Volume Styles -->
+    <string name="volume_style_title">Volume panel styles</string>
+    <string name="rui_style">Realme UI style</string>
+    <string name="rice_style">Rice style</string>
+    <string name="volume_customizations_title">Volume panel customizations</string>
+
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>

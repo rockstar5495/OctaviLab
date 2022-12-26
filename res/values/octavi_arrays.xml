@@ -86,6 +86,18 @@
         <item>2</item>
     </string-array>
 
+   <string-array name="volume_styles_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/rui_style</item>
+        <item>@string/rice_style</item>
+    </string-array>
+
+    <string-array name="volume_styles_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Network traffic location -->
     <string-array name="network_traffic_location_entries">
         <item>@string/traffic_disabled</item>
