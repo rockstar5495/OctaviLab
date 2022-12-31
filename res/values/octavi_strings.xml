@@ -107,12 +107,6 @@
     <string name="volume_key_cursor_control_on">Volume Up/Down - Cursor Left/Right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume Up/Down - Cursor Right/Left</string>
 
-    <!-- Volume Styles -->
-    <string name="volume_style_title">Volume panel styles</string>
-    <string name="rui_style">Realme UI style</string>
-    <string name="rice_style">Rice style</string>
-    <string name="volume_customizations_title">Volume panel customizations</string>
-
     <!-- Volume dialog -->
     <string name="volume_dialog_category">Volume dialog</string>
     <string name="volume_panel_on_left_title">Show volume panel on left</string>
