@@ -24,6 +24,19 @@
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="reticker_status"
+        android:defaultValue="false"
+        android:title="@string/reticker_title"
+        android:summary="@string/reticker_summary" />
+
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="reticker_colored"
+        android:defaultValue="false"
+        android:title="@string/reticker_colored_title"
+        android:summary="@string/reticker_colored_summary"
+        android:dependency="reticker_status" />
+
     <!-- Incall vibration options -->
     <PreferenceCategory
         android:key="accessibility_incall_vibration_category"
