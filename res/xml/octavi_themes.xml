@@ -19,6 +19,7 @@
         android:key="monet_engine"
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
+        settings:iconSpaceReserved="false"
         android:fragment="com.octavi.lab.fragments.MonetSettings" />
 
     <Preference
