@@ -24,6 +24,10 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values"
         android:defaultValue="0" />
+        
+        <PreferenceCategory
+        android:key="volume_category"
+        android:title="@string/volume_category">
 
         <com.octavi.lab.preferences.SystemSettingListPreference
         android:key="volume_key_cursor_control"
@@ -33,10 +37,6 @@
         android:entries="@array/volume_key_cursor_control_entries"
         android:entryValues="@array/volume_key_cursor_control_values"
         android:defaultValue="0" />
-
-        <PreferenceCategory
-        android:key="volume_category"
-        android:title="@string/volume_category">
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
 	   android:key="volume_button_music_control"

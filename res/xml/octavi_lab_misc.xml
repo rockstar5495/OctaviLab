@@ -30,12 +30,26 @@
           android:summary="@string/ignore_window_secure_summary"
           android:defaultValue="false"/>
 
+     <PreferenceCategory
+        android:title="@string/misc_apps_category" >
+
      <Preference
         android:key="app_lock"
         android:title="@string/app_lock_title"
         android:summary="@string/app_lock_summary"
         android:fragment="com.octavi.lab.security.applock.AppLockSettingsFragment"
         settings:controller="com.octavi.lab.security.applock.AppLockSettingsPreferenceController" />
+
+     <Preference
+          android:key="sensor_block_settings"
+          android:title="@string/sensor_block_title"
+          android:summary="@string/sensor_block_summary"
+          android:fragment="com.octavi.lab.settings.fragments.SensorBlockSettings"/>
+     
+     </PreferenceCategory>
+
+     <PreferenceCategory
+        android:title="@string/misc_spoof_category" >
 
     <!-- Unlock FPS for specific games -->
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
@@ -57,6 +71,8 @@
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
         android:defaultValue="true" />
+     
+     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/notifications_category" >
@@ -68,9 +84,4 @@
 
     </PreferenceCategory>
 
-     <Preference
-          android:key="sensor_block_settings"
-          android:title="@string/sensor_block_title"
-          android:summary="@string/sensor_block_summary"
-          android:fragment="com.octavi.lab.settings.fragments.SensorBlockSettings"/>
 </PreferenceScreen>

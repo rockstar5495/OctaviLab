@@ -22,6 +22,8 @@
     <string name="lockscreen_fod_category">Fingerprint On Display</string>
     <string name="ambient_settings_category">Ambient Settings</string>
     <string name="lock_screen_elements_category">Lock screen elements</string>
+    <string name="misc_apps_category">Apps</string>
+    <string name="misc_spoof_category">Device spoofing</string>
 
     <string name="statusbar_summary">Clock &amp; date, Traffic Indicator, Battery Styles, Volte Icons, Notification counts</string>
     <string name="qs_summary">QS Rows &amp; Columns, Data Usage, QS media player, QS Clock styles, Tile titles</string>
