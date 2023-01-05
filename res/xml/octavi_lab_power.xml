@@ -47,10 +47,10 @@
             android:title="@string/global_actions_screenshot"
             android:defaultValue="true" />
 
-        <SwitchPreference
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
             android:key="global_actions_flashlight"
             android:title="@string/global_actions_flashlight"
-            android:persistent="false" />
+            android:defaultValue="false" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
             android:key="global_actions_settings"
@@ -75,11 +75,6 @@
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
             android:key="global_actions_users"
             android:title="@string/global_actions_users"
-            android:defaultValue="false" />
-
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="global_actions_logout"
-            android:title="@string/global_actions_logout"
             android:defaultValue="false" />
 
     </PreferenceCategory>
