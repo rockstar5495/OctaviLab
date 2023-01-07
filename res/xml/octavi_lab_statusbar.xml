@@ -56,4 +56,10 @@
         android:summary="@string/roaming_indicator_icon_summary"
         android:defaultValue="true"/>
 
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+         android:key="statusbar_colored_icons"
+         android:title="@string/statusbar_icons_style"
+         android:summary="@string/statusbar_icons_style_summary"
+         android:defaultValue="false" />
+
 </PreferenceScreen>
