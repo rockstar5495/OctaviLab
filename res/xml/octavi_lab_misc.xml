@@ -60,7 +60,7 @@
 
     <!--Netflix -->
     <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="persist.sys.pixelprops.netflix"
+        android:key="persist.sys.spoof_netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
