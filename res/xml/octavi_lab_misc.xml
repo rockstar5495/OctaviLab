@@ -52,14 +52,14 @@
         android:title="@string/misc_spoof_category" >
 
     <!-- Unlock FPS for specific games -->
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary"
         android:defaultValue="false" />
 
     <!--Netflix -->
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+    <com.octavi.lab.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.spoof_netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
