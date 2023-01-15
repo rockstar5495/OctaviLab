@@ -24,6 +24,12 @@
         android:summary="@string/edge_light_intro_text"
         android:fragment="com.octavi.lab.fragments.EdgeLightSettings" />
 
+    <Preference
+        android:key="pulse_settings"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.octavi.lab.fragments.PulseSettings" />
+
     <com.octavi.lab.preferences.SecureSettingSwitchPreference
         android:key="doze_pulse_on_double_tap"
         android:title="@string/double_tap_on_doze_to_wake_title"
