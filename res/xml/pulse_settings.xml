@@ -127,7 +127,7 @@
             settings:units="@string/unit_pixels"
             android:dependency="pulse_fading_bars_category"/>
 
-        <org.derpfest.support.preferences.SecureSettingSeekBarPreference
+        <com.octavi.support.preference.SecureSettingSeekBarPreference
             android:key="pulse_custom_fudge_factor"
             android:title="@string/pulse_custom_fudge_factor"
             android:defaultValue="4"

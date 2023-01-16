@@ -47,6 +47,12 @@
         android:title="@string/disable_fingerprint_ripple_effect_title"
         android:summary="@string/disable_fingerprint_ripple_effect_summary"
         android:defaultValue="false" />
+
+    <Preference
+        android:key="android.theme.customization.lockscreen_clock_font"
+        android:title="@string/theme_customization_lock_clock_title"
+        android:summary="@string/theme_customization_lock_clock_summary"
+        android:fragment="com.octavi.lab.fragments.LockClockFonts"/>
     
     <PreferenceCategory
         android:key="lockscreen_fod_category"
