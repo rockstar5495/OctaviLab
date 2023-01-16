@@ -376,4 +376,9 @@
     <string name="show_squiggle_animation_title">Show squiggle animation</string>
     <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
 
+    <!-- Lockscreen clock color -->
+    <string name="unit_pixels" translatable="false">dp</string>
+    <string name="kg_custom_clock_color_enabled_title">Custom lockscreen clock color</string>
+    <string name="kg_custom_clock_color_title">Clock color</string>
+
 </resources>
