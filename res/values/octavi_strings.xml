@@ -397,4 +397,8 @@
     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
 
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animation style</string>
+    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+
 </resources>
