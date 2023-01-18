@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -51,6 +52,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.octavi.support.colorpicker.ColorPickerPreference;
 import com.android.internal.util.octavi.OctaviUtils;
 
+import java.util.List;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -59,11 +62,30 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.octavi_lab_lockscreen);
         PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
+        PreferenceCategory udfps = (PreferenceCategory) prefSet.findPreference("lockscreen_fod_category");
+        if (!hasUDFPS(getActivity())) {
+            prefSet.removePreference(udfps);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         return false;
+    }
+
+    /**
+     * Checks if the device has udfps
+     * @param context context for getting FingerprintManager
+     * @return true is udfps is present
+     */
+    public static boolean hasUDFPS(Context context) {
+        final FingerprintManager fingerprintManager =
+                context.getSystemService(FingerprintManager.class);
+        final List<FingerprintSensorPropertiesInternal> props =
+                fingerprintManager.getSensorPropertiesInternal();
+        return props != null && props.size() == 1 && props.get(0).isAnyUdfpsType();
     }
 
     @Override
