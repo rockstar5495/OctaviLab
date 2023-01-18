@@ -37,6 +37,17 @@
         android:summary="@string/reticker_colored_summary"
         android:dependency="reticker_status" />
 
+    <PreferenceCategory
+        android:title="@string/light_settings_header" >
+
+        <Preference
+            android:key="charging_light"
+            android:title="@string/battery_light_settings"
+            android:summary="@string/battery_light_summary"
+            android:fragment="com.octavi.lab.fragments.BatteryLightSettings" />
+
+    </PreferenceCategory>
+
     <!-- Incall vibration options -->
     <PreferenceCategory
         android:key="accessibility_incall_vibration_category"
