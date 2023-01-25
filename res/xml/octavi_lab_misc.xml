@@ -40,13 +40,6 @@
         android:title="@string/misc_apps_category" >
 
      <Preference
-        android:key="app_lock"
-        android:title="@string/app_lock_title"
-        android:summary="@string/app_lock_summary"
-        android:fragment="com.octavi.lab.security.applock.AppLockSettingsFragment"
-        settings:controller="com.octavi.lab.security.applock.AppLockSettingsPreferenceController" />
-
-     <Preference
           android:key="sensor_block_settings"
           android:title="@string/sensor_block_title"
           android:summary="@string/sensor_block_summary"
