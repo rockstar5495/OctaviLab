@@ -541,4 +541,8 @@
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
+
+    <!-- Disable QS -->
+    <string name="disable_qs_title">Hide QS in secure lockscreen</string>
+    <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
 </resources>

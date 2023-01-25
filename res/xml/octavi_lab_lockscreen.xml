@@ -42,6 +42,12 @@
         android:summary="@string/enable_fingerprint_ripple_effect_summary"
         android:defaultValue="true" />
 
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+        android:key="secure_lockscreen_qs_disabled"
+        android:title="@string/disable_qs_title"
+        android:summary="@string/disable_qs_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:key="android.theme.customization.lockscreen_clock_font"
         android:title="@string/theme_customization_lock_clock_title"
