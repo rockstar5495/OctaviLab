@@ -49,6 +49,12 @@
             android:entryValues="@array/qs_brightness_slider_values"
             android:defaultValue="1" />
 
+    <Preference
+            android:key="qs_tile_layout"
+            android:title="@string/qs_tile_layout_title"
+            android:summary="@string/qs_tile_layout_summary"
+            android:fragment="com.octavi.lab.fragments.QsTileLayoutSettings" />
+
     <com.octavi.lab.preferences.SecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:title="@string/qs_brightness_slider_position_title"
