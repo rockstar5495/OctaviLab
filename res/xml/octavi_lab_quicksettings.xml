@@ -42,13 +42,22 @@
             android:summary="@string/show_squiggle_animation_summary"
             android:defaultValue="true" />
 
-    <com.octavi.support.preference.SystemSettingSwitchPreference
+    <PreferenceCategory
+        android:title="@string/status_bar_clock_title">
+
+        <com.octavi.support.preference.SystemSettingSwitchPreference
+            android:key="show_qs_date"
+            android:title="@string/qs_date_title"
+            android:summary="@string/qs_date_summary"
+            android:defaultValue="true" />
+
+        <com.octavi.support.preference.SystemSettingSwitchPreference
             android:key="show_qs_clock"
             android:title="@string/qs_clock_title"
             android:summary="@string/qs_clock_summary"
             android:defaultValue="true" />
 
-    <com.octavi.support.preference.SystemSettingSeekBarPreference
+        <com.octavi.support.preference.SystemSettingSeekBarPreference
             android:key="qs_header_clock_size"
             android:title="@string/clock_font_size_title"
             android:max="27"
@@ -56,6 +65,8 @@
             settings:interval="1"
             android:defaultValue="14"
             settings:units="@string/unit_pixels" />
+
+    </PreferenceCategory>
 
     <Preference
             android:key="qs_tile_layout"
