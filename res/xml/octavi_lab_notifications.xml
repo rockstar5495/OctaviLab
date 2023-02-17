@@ -41,6 +41,12 @@
         android:title="@string/light_settings_header" >
 
         <Preference
+            android:key="pulse_ambient_light"
+            android:title="@string/pulse_ambient_light_title"
+            android:summary="@string/pulse_ambient_light_summary"
+            android:fragment="com.octavi.lab.fragments.EdgeLightningSettings" />
+
+        <Preference
             android:key="charging_light"
             android:title="@string/battery_light_settings"
             android:summary="@string/battery_light_summary"
