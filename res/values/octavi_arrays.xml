@@ -66,21 +66,6 @@
         <item>0</item>
     </string-array>
 
-    <!-- Edge light color modes -->
-    <string-array name="edge_light_color_mode_entries" translatable="false">
-        <item>@string/accent_color</item>
-        <item>@string/notification_color</item>
-        <item>@string/wallpaper_color</item>
-        <item>@string/custom_color</item>
-    </string-array>
-
-    <string-array name="edge_light_color_mode_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
     <!-- App lock timeout -->
     <string-array name="app_lock_timeout_entries">
         <item>5 seconds</item>
