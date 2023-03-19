@@ -15,11 +15,10 @@
 	android:title="@string/themes_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
-        android:key="monet_engine"
-        android:title="@string/monet_title"
-        android:summary="@string/monet_summary"
-        settings:iconSpaceReserved="false"
+    <Preference
+        android:key="monet_settings"
+        android:title="@string/monet_settings_title"
+        android:summary="@string/monet_settings_summary"
         android:fragment="com.octavi.lab.fragments.MonetSettings" />
 
     <!-- Font style -->
