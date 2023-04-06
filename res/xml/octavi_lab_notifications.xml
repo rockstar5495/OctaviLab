@@ -54,6 +54,13 @@
 
     </PreferenceCategory>
 
+    <!-- Notification Counter -->
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_notif_count"
+        android:title="@string/status_bar_notif_count_title"
+        android:summary="@string/status_bar_notif_count_summary"
+        android:defaultValue="false" />
+
     <!-- Incall vibration options -->
     <PreferenceCategory
         android:key="accessibility_incall_vibration_category"
