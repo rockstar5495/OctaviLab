@@ -18,41 +18,51 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:key="pulse_settings"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.octavi.lab.fragments.PulseSettings" />
+    <PreferenceCategory
+        android:title="@string/lockscreen_general_category_title">
 
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
-        android:key="doze_pulse_on_double_tap"
-        android:title="@string/double_tap_on_doze_to_wake_title"
-        android:summary="@string/double_tap_on_doze_to_wake_summary"
-        android:defaultValue="true" />
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
-        android:title="@string/lockscreen_battery_info_title"
-        android:summary="@string/lockscreen_battery_info_summary"
-        android:defaultValue="true" />
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="enable_ripple_effect"
-        android:title="@string/enable_fingerprint_ripple_effect_title"
-        android:summary="@string/enable_fingerprint_ripple_effect_summary"
-        android:defaultValue="true" />
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            android:key="secure_lockscreen_qs_disabled"
+            android:title="@string/disable_qs_title"
+            android:summary="@string/disable_qs_summary"
+            android:defaultValue="false" />
 
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
-        android:key="secure_lockscreen_qs_disabled"
-        android:title="@string/disable_qs_title"
-        android:summary="@string/disable_qs_summary"
-        android:defaultValue="false" />
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
 
-    <Preference
-        android:key="android.theme.customization.lockscreen_clock_font"
-        android:title="@string/theme_customization_lock_clock_title"
-        android:summary="@string/theme_customization_lock_clock_summary"
-        android:fragment="com.octavi.lab.fragments.LockClockFonts"/>
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="fingerprint_error_vib"
+            android:title="@string/fprint_error_vib_title"
+            android:summary="@string/fprint_error_vib_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/lockscreen_clock_category_title">
+
+        <Preference
+            android:key="android.theme.customization.lockscreen_clock_font"
+            android:title="@string/theme_customization_lock_clock_title"
+            android:summary="@string/theme_customization_lock_clock_summary"
+            android:fragment="com.octavi.lab.fragments.LockClockFonts"/>
+
+    </PreferenceCategory>
     
     <PreferenceCategory
         android:key="lockscreen_fod_category"
@@ -76,18 +86,17 @@
             android:summary="@string/udfps_recog_animation_effect_summary"
             android:fragment="com.octavi.lab.fragments.UdfpsAnimation" />
     </PreferenceCategory>
-    
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:defaultValue="true" />
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_error_vib"
-        android:title="@string/fprint_error_vib_title"
-        android:summary="@string/fprint_error_vib_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/pulse_music_category_title">
+
+        <Preference
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.octavi.lab.fragments.PulseSettings" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/lockscreen_shortcut_category">

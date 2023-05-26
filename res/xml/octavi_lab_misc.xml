@@ -14,21 +14,21 @@
      limitations under the License.
 -->
 <PreferenceScreen
-     xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/misc_title"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/misc_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <com.octavi.lab.preferences.SystemSettingSwitchPreference
-          android:key="toast_icon"
-          android:title="@string/toast_icon_title"
-          android:summary="@string/toast_icon_summary"
-          android:defaultValue="false" />
+    <com.octavi.lab.preferences.SystemSettingSwitchPreference
+         android:key="toast_icon"
+         android:title="@string/toast_icon_title"
+         android:summary="@string/toast_icon_summary"
+         android:defaultValue="false" />
 
-     <com.octavi.lab.preferences.SecureSettingSwitchPreference
-          android:key="window_ignore_secure"
-          android:title="@string/ignore_window_secure_title"
-          android:summary="@string/ignore_window_secure_summary"
-          android:defaultValue="false"/>
+    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+         android:key="window_ignore_secure"
+         android:title="@string/ignore_window_secure_title"
+         android:summary="@string/ignore_window_secure_summary"
+         android:defaultValue="false"/>
 
     <com.octavi.lab.preferences.GlobalSettingSwitchPreference
         android:key="pie_animation_style"
@@ -36,41 +36,41 @@
         android:summary="@string/pie_animation_style_summary"
         android:defaultValue="false" />
 
-     <PreferenceCategory
-        android:title="@string/misc_apps_category" >
+    <PreferenceCategory
+       android:title="@string/misc_apps_category" >
 
-     <Preference
-          android:key="sensor_block_settings"
-          android:title="@string/sensor_block_title"
-          android:summary="@string/sensor_block_summary"
-          android:fragment="com.octavi.lab.settings.fragments.SensorBlockSettings"/>
-     
-     </PreferenceCategory>
+    <Preference
+         android:key="sensor_block_settings"
+         android:title="@string/sensor_block_title"
+         android:summary="@string/sensor_block_summary"
+         android:fragment="com.octavi.lab.settings.fragments.SensorBlockSettings"/>
 
-     <PreferenceCategory
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/misc_spoof_category" >
 
-    <!-- Unlock FPS for specific games -->
-    <com.octavi.lab.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.games"
-        android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary"
-        android:defaultValue="false" />
+        <!-- Unlock FPS for specific games -->
+        <com.octavi.lab.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.games"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary"
+            android:defaultValue="false" />
 
-    <!--Netflix -->
-    <com.octavi.lab.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.spoof_netflix"
-        android:title="@string/netflix_spoof_title"
-        android:summary="@string/netflix_spoof_summary"
-        android:defaultValue="false" />
+        <!--Netflix -->
+        <com.octavi.lab.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.spoof_netflix"
+            android:title="@string/netflix_spoof_title"
+            android:summary="@string/netflix_spoof_summary"
+            android:defaultValue="false" />
 
-    <!-- Unlimited google photos storage -->
-    <com.octavi.lab.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.gphotos"
-        android:title="@string/use_photos_spoof_title"
-        android:summary="@string/use_photos_spoof_summary"
-        android:defaultValue="true" />
-     
+        <!-- Unlimited google photos storage -->
+        <com.octavi.lab.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
      </PreferenceCategory>
 
     <PreferenceCategory

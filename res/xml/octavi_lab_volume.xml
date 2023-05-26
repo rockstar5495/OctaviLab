@@ -28,20 +28,20 @@
         android:title="@string/volume_dialog_category">
 
     <!-- Volume panel to left -->
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
-        android:key="volume_panel_on_left"
-        android:title="@string/volume_panel_on_left_title"
-        android:summary="@string/volume_panel_on_left_summary"
-        android:defaultValue="true" />
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            android:key="volume_panel_on_left"
+            android:title="@string/volume_panel_on_left_title"
+            android:summary="@string/volume_panel_on_left_summary"
+            android:defaultValue="true" />
 
-    <com.octavi.support.preference.SystemSettingSeekBarPreference
-        android:key="volume_dialog_timeout"
-        android:title="@string/volume_dialog_timeout_title"
-        android:order="200"
-        android:defaultValue="3"
-        android:max="10"
-        settings:min="1"
-        settings:units="@string/unit_seconds" />
+        <com.octavi.support.preference.SystemSettingSeekBarPreference
+            android:key="volume_dialog_timeout"
+            android:title="@string/volume_dialog_timeout_title"
+            android:order="200"
+            android:defaultValue="3"
+            android:max="10"
+            settings:min="1"
+            settings:units="@string/unit_seconds" />
 
     </PreferenceCategory>
 </PreferenceScreen>

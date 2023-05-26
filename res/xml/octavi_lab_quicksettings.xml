@@ -18,102 +18,74 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
+    <PreferenceCategory
+       android:title="@string/qs_tile_category_title" >
 
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
-
-    <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="notification_material_dismiss"
-            android:title="@string/notification_material_dismiss_title"
-            android:summary="@string/notification_material_dismiss_summary"
-            android:defaultValue="false" />
-
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
-            android:key="show_media_squiggle_animation"
-            android:title="@string/show_squiggle_animation_title"
-            android:summary="@string/show_squiggle_animation_summary"
-            android:defaultValue="true" />
-
-    <!-- PreferenceCategory
-        android:title="@string/status_bar_clock_title">
-
-        <com.octavi.support.preference.SystemSettingSwitchPreference
-            android:key="show_qs_date"
-            android:title="@string/qs_date_title"
-            android:summary="@string/qs_date_summary"
-            android:defaultValue="true" />
-
-        <com.octavi.support.preference.SystemSettingSwitchPreference
-            android:key="show_qs_clock"
-            android:title="@string/qs_clock_title"
-            android:summary="@string/qs_clock_summary"
-            android:defaultValue="true" />
-
-        <com.octavi.support.preference.SystemSettingSeekBarPreference
-            android:key="qs_header_clock_size"
-            android:title="@string/clock_font_size_title"
-            android:max="27"
-            settings:min="10"
-            settings:interval="1"
-            android:defaultValue="14"
-            settings:units="@string/unit_pixels" />
-
-    </PreferenceCategory> -->
-
-    <Preference
+        <Preference
             android:key="qs_tile_layout"
             android:title="@string/qs_tile_layout_title"
             android:summary="@string/qs_tile_layout_summary"
             android:fragment="com.octavi.lab.fragments.QsTileLayoutSettings" />
 
-    <com.octavi.lab.preferences.SecureSettingListPreference
+    </PreferenceCategory>
+
+    <PreferenceCategory
+       android:title="@string/qs_general_category_title" >
+
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_data_usage"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:defaultValue="false" />
+
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
+            android:key="show_media_squiggle_animation"
+            android:title="@string/show_squiggle_animation_title"
+            android:summary="@string/show_squiggle_animation_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+       android:title="@string/notification_material_dismiss_category_title" >
+
+        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+       android:title="@string/qs_brightness_category_title" >
+
+        <com.octavi.lab.preferences.SecureSettingListPreference
             android:key="qs_show_brightness_slider"
             android:title="@string/qs_brightness_slider_title"
             android:entries="@array/qs_brightness_slider_entries"
             android:entryValues="@array/qs_brightness_slider_values"
             android:defaultValue="1" />
 
-    <com.octavi.lab.preferences.SecureSettingListPreference
+        <com.octavi.lab.preferences.SecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:title="@string/qs_brightness_slider_position_title"
             android:entries="@array/qs_brightness_slider_position_entries"
             android:entryValues="@array/qs_brightness_slider_position_values"
             android:defaultValue="0" />
 
-    <com.octavi.lab.preferences.SecureSettingSwitchPreference
+        <com.octavi.lab.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
             android:title="@string/qs_auto_brightness_title"
             android:summary="@string/qs_auto_brightness_summary"
             android:defaultValue="true" />
 
-        <!-- Battery styles -->
-        <!-- <com.octavi.lab.preferences.SystemSettingListPreference
-            android:key="qs_battery_style"
-            android:title="@string/status_bar_battery_style_title"
-            android:entries="@array/qs_battery_style_entries"
-            android:entryValues="@array/qs_battery_style_values"
-            android:defaultValue="-1" /> -->
+    </PreferenceCategory>
 
-        <!-- Battery location -->
-        <!-- <com.octavi.lab.preferences.SystemSettingListPreference
-            android:key="qs_show_battery_percent"
-            android:title="@string/status_bar_battery_percent_title"
-            android:entries="@array/status_bar_battery_percent_entries"
-            android:entryValues="@array/status_bar_battery_percent_values"
-            android:defaultValue="2" /> -->
-
-        <!-- Battery estimate -->
-        <!-- <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="qs_show_battery_estimate"
-            android:title="@string/battery_estimate_title"
-            android:summary="@string/battery_estimate_summary"
-            android:defaultValue="false" /> -->
 </PreferenceScreen>

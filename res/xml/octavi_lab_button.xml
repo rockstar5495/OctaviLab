@@ -19,37 +19,38 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.octavi.lab.preferences.SystemSettingListPreference
-        android:key="torch_power_button_gesture"
-        android:title="@string/torch_power_button_gesture_title"
-        android:entries="@array/torch_power_button_gesture_entries"
-        android:entryValues="@array/torch_power_button_gesture_values"
-        android:defaultValue="0" />
-        
+            android:key="torch_power_button_gesture"
+            android:title="@string/torch_power_button_gesture_title"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values"
+            android:defaultValue="0" />
+
         <PreferenceCategory
-        android:key="volume_category"
-        android:title="@string/volume_category">
+            android:key="volume_category"
+            android:title="@string/volume_category">
 
-        <com.octavi.lab.preferences.SystemSettingListPreference
-        android:key="volume_key_cursor_control"
-        android:summary="%s"
-        android:title="@string/volume_key_cursor_control_title"
-        android:dialogTitle="@string/volume_key_cursor_control_title"
-        android:entries="@array/volume_key_cursor_control_entries"
-        android:entryValues="@array/volume_key_cursor_control_values"
-        android:defaultValue="0" />
+            <com.octavi.lab.preferences.SystemSettingListPreference
+                android:key="volume_key_cursor_control"
+                android:summary="%s"
+                android:title="@string/volume_key_cursor_control_title"
+                android:dialogTitle="@string/volume_key_cursor_control_title"
+                android:entries="@array/volume_key_cursor_control_entries"
+                android:entryValues="@array/volume_key_cursor_control_values"
+                android:defaultValue="0" />
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-	   android:key="volume_button_music_control"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="false"
-        android:dependency="volume_rocker_wake" />
+            <com.octavi.lab.preferences.SystemSettingSwitchPreference
+	            android:key="volume_button_music_control"
+                android:summary="@string/volume_rocker_music_controls_summary"
+                android:title="@string/volume_rocker_music_controls_title"
+                android:defaultValue="false"
+                android:dependency="volume_rocker_wake" />
 
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
-    </PreferenceCategory>
+            <com.octavi.lab.preferences.SystemSettingSwitchPreference
+                android:key="volume_rocker_wake"
+                android:summary="@string/volume_rocker_wake_summary"
+                android:title="@string/volume_rocker_wake_title"
+                android:defaultValue="false"
+                android:disableDependentsState="true" />
+
+        </PreferenceCategory>
 </PreferenceScreen>
