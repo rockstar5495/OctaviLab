@@ -51,7 +51,7 @@ public class MonetSettings extends SettingsPreferenceFragment implements
     private static final String OVERLAY_CATEGORY_THEME_STYLE =
             "android.theme.customization.theme_style";
     private static final String OVERLAY_CATEGORY_BG_COLOR =
-            "android.theme.customization.bg_color"
+            "android.theme.customization.bg_color";
     private static final String OVERLAY_COLOR_SOURCE =
             "android.theme.customization.color_source";
     private static final String OVERLAY_COLOR_BOTH =
