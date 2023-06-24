@@ -42,7 +42,7 @@
             android:summary="@string/show_squiggle_animation_summary"
             android:defaultValue="true" />
 
-    <PreferenceCategory
+    <!-- PreferenceCategory
         android:title="@string/status_bar_clock_title">
 
         <com.octavi.support.preference.SystemSettingSwitchPreference
@@ -66,7 +66,7 @@
             android:defaultValue="14"
             settings:units="@string/unit_pixels" />
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <Preference
             android:key="qs_tile_layout"
@@ -95,25 +95,25 @@
             android:defaultValue="true" />
 
         <!-- Battery styles -->
-        <com.octavi.lab.preferences.SystemSettingListPreference
+        <!-- <com.octavi.lab.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:entries="@array/qs_battery_style_entries"
             android:entryValues="@array/qs_battery_style_values"
-            android:defaultValue="-1" />
+            android:defaultValue="-1" /> -->
 
         <!-- Battery location -->
-        <com.octavi.lab.preferences.SystemSettingListPreference
+        <!-- <com.octavi.lab.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:title="@string/status_bar_battery_percent_title"
             android:entries="@array/status_bar_battery_percent_entries"
             android:entryValues="@array/status_bar_battery_percent_values"
-            android:defaultValue="2" />
+            android:defaultValue="2" /> -->
 
         <!-- Battery estimate -->
-        <com.octavi.lab.preferences.SystemSettingSwitchPreference
+        <!-- <com.octavi.lab.preferences.SystemSettingSwitchPreference
             android:key="qs_show_battery_estimate"
             android:title="@string/battery_estimate_title"
             android:summary="@string/battery_estimate_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" /> -->
 </PreferenceScreen>
