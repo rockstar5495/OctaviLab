@@ -57,7 +57,7 @@
             android:defaultValue="true" />
 
         <com.octavi.lab.preferences.SystemSettingSwitchPreference
-            android:key="global_actions_flashlight"
+            android:key="global_actions_torch"
             android:title="@string/global_actions_flashlight"
             android:defaultValue="false" />
 
