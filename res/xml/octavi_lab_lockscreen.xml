@@ -65,8 +65,12 @@
     </PreferenceCategory>
     
     <PreferenceCategory
-        android:key="lockscreen_fod_category"
-        android:title="@string/lockscreen_fod_category">
+        android:key="udfps_category"
+        android:title="@string/udfps_category">
+
+        <Preference
+            android:key="udfps_settings"
+            android:fragment="com.octavi.lab.fragments.UdfpsSettings" />
 
         <com.octavi.lab.preferences.SecureSettingSwitchPreference
             android:key="screen_off_udfps_enabled"

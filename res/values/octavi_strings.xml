@@ -19,7 +19,6 @@
     <string name="button_category">Buttons</string>
     <string name="system_category">System</string>
     <string name="notifications_category">Notifications</string>
-    <string name="lockscreen_fod_category">Fingerprint On Display</string>
     <string name="ambient_settings_category">Ambient Settings</string>
     <string name="lock_screen_elements_category">Lock screen elements</string>
     <string name="misc_apps_category">Apps</string>
@@ -506,14 +505,12 @@
     <string name="max_visible_notification_icons_title">Notification icons</string>
     <string name="max_visible_notification_icons_summary">Max. notification icons visible on statusbar</string>
 
-    <!-- UDFPS Recog Animation -->
-    <string name="udfps_customization">UDFPS customization</string>
+    <!-- UDFPS Settings -->
+    <string name="udfps_category">UDFPS customization</string>
     <string name="udfps_recog_animation">UDFPS animation</string>
     <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
     <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
     <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
-
-    <!-- UDFPS icon picker -->
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string> 
 
