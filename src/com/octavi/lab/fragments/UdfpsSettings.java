@@ -58,7 +58,7 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.octavi_lab_lockscreen);
+        addPreferencesFromResource(R.xml.udfps_settings);
 
         final PreferenceScreen prefSet = getPreferenceScreen();
         Resources resources = getResources();

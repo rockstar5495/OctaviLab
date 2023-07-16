@@ -70,25 +70,10 @@
 
         <Preference
             android:key="udfps_settings"
+            android:title="@string/udfps_settings_title"
+            android:summary="@string/udfps_settings_summary"
             android:fragment="com.octavi.lab.fragments.UdfpsSettings" />
 
-        <com.octavi.lab.preferences.SecureSettingSwitchPreference
-            android:key="screen_off_udfps_enabled"
-            android:title="@string/screen_off_udfps_title"
-            android:summary="@string/screen_off_udfps_summary"
-            android:defaultValue="false" />
-
-        <Preference
-            android:key="udfps_icon_picker"
-            android:title="@string/udfps_icon_picker_title"
-            android:summary="@string/udfps_icon_picker_summary"
-            android:fragment="com.octavi.lab.fragments.UdfpsIconPicker" />
-
-        <Preference
-            android:key="udfps_recognizing_animation_preview"
-            android:title="@string/udfps_recog_animation_effect_title"
-            android:summary="@string/udfps_recog_animation_effect_summary"
-            android:fragment="com.octavi.lab.fragments.UdfpsAnimation" />
     </PreferenceCategory>
 
     <PreferenceCategory
