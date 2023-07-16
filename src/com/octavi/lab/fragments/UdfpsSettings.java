@@ -23,6 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.fingerprint.FingerprintSensorPropertiesInternal;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -43,6 +44,8 @@ import com.android.internal.util.octavi.OctaviUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import java.util.List;
+
 public class UdfpsSettings extends SettingsPreferenceFragment {
 
    private static final String UDFPS_ICON_PICKER = "udfps_icon_picker";
@@ -62,6 +65,11 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
 
         final PreferenceScreen prefSet = getPreferenceScreen();
         Resources resources = getResources();
+
+        PreferenceCategory udfps = (PreferenceCategory) prefSet.findPreference("udfps_category");
+        if (!hasUDFPS(getActivity())) {
+            prefSet.removePreference(udfps);
+        }
 
         final boolean udfpsResPkgInstalled = OctaviUtils.isPackageInstalled(getContext(),
                 "com.octavi.udfps.resources");
@@ -92,6 +100,19 @@ public class UdfpsSettings extends SettingsPreferenceFragment {
                 Settings.System.UDFPS_ICON, 0, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.SCREEN_OFF_UDFPS_ENABLED, 0, UserHandle.USER_CURRENT);
+    }
+
+    /**
+     * Checks if the device has udfps
+     * @param context context for getting FingerprintManager
+     * @return true is udfps is present
+     */
+    public static boolean hasUDFPS(Context context) {
+        final FingerprintManager fingerprintManager =
+                context.getSystemService(FingerprintManager.class);
+        final List<FingerprintSensorPropertiesInternal> props =
+                fingerprintManager.getSensorPropertiesInternal();
+        return props != null && props.size() == 1 && props.get(0).isAnyUdfpsType();
     }
 
     @Override
